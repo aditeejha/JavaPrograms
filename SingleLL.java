@@ -15,7 +15,7 @@ class Node{
 
 public class SingleLL{
     public static Node convert2LL(int[] arr){
-        if(arr.length==0){
+        if(arr.length==0){ 
             return null;
         }
         Node head=new Node(arr[0]);
