@@ -5,6 +5,7 @@ public class A_One_and_Two {
         int t=sc.nextInt();
         while(t-- >0){
             int k=0;
+            int ans=0;
             int n=sc.nextInt();
             int[] arr=new int[n];
             for (int i=0; i<n; i++){
@@ -19,13 +20,12 @@ public class A_One_and_Two {
                     p*=arr[j];
                 }
                 if(prod==p){
+                    ans=k;
                     break;
                 }
             }
-            if(k==0){
-                k=-1;
-            }
-            System.out.println(k);
+            if(ans==0) ans=-1;
+            System.out.println(ans);
         }
     }
 }
