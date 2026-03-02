@@ -4,7 +4,7 @@ public class A_One_and_Two {
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-- >0){
-            int k=-1;
+            int k=0;
             int n=sc.nextInt();
             int[] arr=new int[n];
             for (int i=0; i<n; i++){
@@ -21,6 +21,9 @@ public class A_One_and_Two {
                         break;
                     }
                 }
+            }
+            if(k==0 || k==n-1){
+                k=-1;
             }
             System.out.println(k);
         }
