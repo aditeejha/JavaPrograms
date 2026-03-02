@@ -19,10 +19,10 @@ public class A_One_and_Two {
                     p*=arr[j];
                 }
                 if(prod==p){
-                        break;
+                    break;
                 }
             }
-            if(k==0 || k==n-1){
+            if(k==0){
                 k=-1;
             }
             System.out.println(k);
