@@ -1,5 +1,6 @@
 import java.util.*;
-public class A_Serval_and_Mocha_s_Array {  
+
+public class A_Serval_and_Mocha_s_Array {
     static int gcd(int a, int b){
         return b == 0 ? a : gcd(b, a % b);
     }
@@ -9,12 +10,20 @@ public class A_Serval_and_Mocha_s_Array {
         while(t-- > 0){
             int n = sc.nextInt();
             int[] arr = new int[n];
-            int g = 0;  
             for(int i = 0; i < n; i++){
                 arr[i] = sc.nextInt();
-                g = gcd(g, arr[i]);
             }
-            if(g == 1){
+            boolean possible = false;
+            for(int i = 0; i < n; i++){
+                for(int j = i + 1; j < n; j++){
+                    if(gcd(arr[i], arr[j]) <= 2){
+                        possible = true;
+                        break;
+                    }
+                }
+                if(possible) break;
+            }
+            if(possible){
                 System.out.println("Yes");
             } else {
                 System.out.println("No");
