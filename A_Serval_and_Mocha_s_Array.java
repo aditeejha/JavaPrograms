@@ -8,6 +8,10 @@ public class A_Serval_and_Mocha_s_Array{
             int[] arr=new int[n];
             for (int i=0; i<n; i++) {
                 arr[i]=sc.nextInt();
+                if(arr[i]==1){
+                    System.out.println("Yes");
+                    break;
+                }
             }
         }
     }
