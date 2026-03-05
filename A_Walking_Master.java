@@ -14,6 +14,10 @@ public class A_Walking_Master{
             else{
                 int yop=arr[3]-arr[1];
                 int newx=arr[0]+yop;
+                if(newx<arr[0]){
+                    System.out.println(-1);
+                    continue;
+                }
                 int xop=Math.abs(newx-arr[2]);
                 System.out.println(yop+xop);
             }
