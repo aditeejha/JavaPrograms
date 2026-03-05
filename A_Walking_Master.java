@@ -12,8 +12,10 @@ public class A_Walking_Master{
                 System.out.println(-1);
             }
             else{
-                int ans=(arr[3]-arr[1])+(arr[2]-arr[0]);
-                System.out.println(ans);
+                int yop=arr[3]-arr[1];
+                int newx=arr[0]+yop;
+                int xop=Math.abs(newx-arr[2]);
+                System.out.println(yop+xop);
             }
             }
         }
