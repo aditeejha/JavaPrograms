@@ -14,7 +14,7 @@ public class A_One_and_Two {
             }
             if(totalTwos % 2 != 0){
                 System.out.println(-1);
-                continue;
+                continue; 
             }
             int target = totalTwos / 2;
             int leftTwos = 0;
@@ -27,4 +27,4 @@ public class A_One_and_Two {
             }
         }
     }
-}
+} 
