@@ -11,7 +11,6 @@ public class B_Blank_Space{
                 arr[i]=sc.nextInt();
                 if(arr[i]==0){
                     cnt++;
-                    blanks=cnt;
                 }
                 else{
                     blanks=Math.max(blanks, cnt);
