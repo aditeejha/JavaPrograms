@@ -17,6 +17,7 @@ public class B_Blank_Space{
                     cnt=0;
                 }
             }
+            blanks=Math.max(blanks, cnt);
             System.out.println(blanks);
         }
     }
