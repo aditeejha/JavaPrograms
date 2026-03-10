@@ -18,15 +18,14 @@ public class A_Unit_Array{
                     cm1++;
                 }
             }
-            if(c1==cm1){
-                System.out.println(0);
+            if(cm1>c1){
+                ops=cm1-c1;
+                cm1+=ops;
             }
-            else if(c1>cm1){
-                System.out.println(c1-cm1);
+            if(cm1%2!=0){
+                ops+=1;
             }
-            else{
-                System.out.println(cm1-c1);
-        }
+            System.out.println(ops);
     }
 }
 }
