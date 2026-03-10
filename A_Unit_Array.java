@@ -18,12 +18,10 @@ public class A_Unit_Array{
                     cm1++;
                 }
             }
-            if(cm1>c1){
-                ops=cm1-c1;
-                cm1+=ops;
-            }
-            if(cm1%2!=0){
-                ops+=1;
+            while(c1<cm1 || cm1%2==1){
+                ops++;
+                c1++;
+                cm1--;
             }
             System.out.println(ops);
     }
