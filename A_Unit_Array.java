@@ -27,7 +27,6 @@ public class A_Unit_Array{
             else{
                 System.out.println(cm1-c1);
         }
-        System.out.println(ops);
     }
 }
 }
