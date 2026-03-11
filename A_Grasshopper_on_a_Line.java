@@ -6,18 +6,7 @@ public class A_Grasshopper_on_a_Line{
         while(t-->0){
             int n=sc.nextInt();
             int k=sc.nextInt();
-            int x=0,y=0;
-            int cnt=0;
-            int mc=0;
-            while((x+y)!=n && x%k!=0 && y%k!=0){
-                x=0;
-                y=x-n;
-                mc++;
-                cnt=Math.max(cnt,mc);
-                x++;
-                y--;
-            }
-            System.out.println(cnt);
+            
         }
     }
 }
