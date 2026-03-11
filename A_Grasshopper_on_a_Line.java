@@ -4,8 +4,12 @@ public class A_Grasshopper_on_a_Line{
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
         while(t-->0){
-            int n=sc.nextInt();
+            int x=sc.nextInt();
             int k=sc.nextInt();
+            if(x%k==0){
+                System.out.println(2);
+                System.out.println(1 + " " + (x-1));
+            }
             
         }
     }
