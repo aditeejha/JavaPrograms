@@ -7,6 +7,13 @@ public class A_Forbidden_Integer{
             int n=sc.nextInt();
             int k=sc.nextInt();
             int x=sc.nextInt();
+            int sum=0;
+            for(int i=1; i<=k; i++){
+                if(i!=x){
+                    sum+=i;
+                }
+                if(sum==i || sum>i) break;
+            }
         }
     }
 }
