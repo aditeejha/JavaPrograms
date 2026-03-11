@@ -5,7 +5,7 @@ public class A_Grasshopper_on_a_Line{
         int t=sc.nextInt();
         while(t-->0){
             int n=sc.nextInt();
-            int x=sc.nextInt();
+            int k=sc.nextInt();
         }
     }
 }
