@@ -12,6 +12,7 @@ public class A_Forbidden_Integer{
                 System.out.println(n);
                 for(int i=1;i<=n;i++){
                     System.out.print(1 + " ");
+                    System.out.println();
                 }
             }
             else if(n%2==0){
@@ -19,6 +20,7 @@ public class A_Forbidden_Integer{
                 System.out.println(n/2);
                 for(int i=1;i<=n/2;i++){
                     System.out.print(2 + " ");
+                    System.out.println();
                 }
             }
             else if(n%2!=0){
@@ -26,6 +28,7 @@ public class A_Forbidden_Integer{
                 System.out.println(3);
                 for(int i=1; i<=(n-3)/2; i++){
                     System.out.print(2 + " ");
+                    System.out.println();
                 }
             }
             else{
