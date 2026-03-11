@@ -10,7 +10,10 @@ public class A_Grasshopper_on_a_Line{
                 System.out.println(2);
                 System.out.println(1 + " " + (x-1));
             }
-            
+            else{
+                System.out.println(1);
+                System.out.println(x);
+            }
         }
     }
 }
