@@ -10,7 +10,7 @@ public class A_Grasshopper_on_a_Line{
             int cnt=0;
             int mc=0;
             while((x+y)!=n && x%k!=0 && y%k!=0){
-                x=n;
+                x=0;
                 y=x-n;
                 mc++;
                 cnt=Math.max(cnt,mc);
