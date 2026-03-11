@@ -20,6 +20,12 @@ public class A_Forbidden_Integer{
                     System.out.print(i+ " ");
                     break;
                 }
+                else{
+                    if(sum<0){
+                        System.out.println("NO");
+                        break;
+                    }
+                }
             }
         }
     }
