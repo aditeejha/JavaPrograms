@@ -1,5 +1,4 @@
 public class Stack {
-    class StImpl{
         int top=-1; 
         int[] st=new int[10];
         void push(int x){
@@ -21,8 +20,21 @@ public class Stack {
         int size(){
             return top+1;
         }
-    }
     public static void main(String[] args) {
-         
+       Stack obj=new Stack();
+       obj.push(1);
+       obj.push(2);
+       obj.push(3);
+       obj.push(4);
+       obj.push(5);
+       obj.push(6);
+       obj.push(7);
+       obj.push(8);
+       obj.push(9);
+       obj.push(10);
+       obj.pop();
+       obj.topp();
+       obj.size();
+       obj.push(11);
     }
 }
