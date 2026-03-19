@@ -2,13 +2,15 @@ public class Stack {
         int top=-1; 
         int[] st=new int[10];
         void push(int x){
-            if(top>=9){
+            if(top==9){
                 System.out.println("Stack is full");
+                return;
             }
-            st[top++]=x;
+            top++;
+            st[top]=x;
         }
         int topp(){
-            if(top==-1) return -1;
+            //if(top==-1) return -1;
             return st[top];
         }
         void pop(){
@@ -35,8 +37,8 @@ public class Stack {
        obj.pop();
        obj.topp();
        obj.size();
-       for(int i=0; i<9; i++){
-        System.out.println(obj[i]);
+       for(int i=0; i<obj.top; i++){
+        System.out.println(obj.st[i]);
        }
     }
 }
