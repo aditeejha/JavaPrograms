@@ -2,8 +2,10 @@ public class Queue{
     int size=10, currSize=0, start=-1, end=-1;
     int[] q=new int[size];
     void push(int x){
-        if(currSize==size)
+        if(currSize==size){
             System.out.println("Queue is full");
+            return;
+        }
         else if(currSize==0){
             start=0; end=0;
         }
@@ -14,22 +16,26 @@ public class Queue{
         }
     }
     int pop(){
-        if(currSize==0) 
+        if(currSize==0){
             System.out.println("Queue is empty");
-        int el=q[end];
+            return -1;
+        }
+        int el=q[start];
         if(currSize==1){
             start=-1;
             end=-1;
         }
         else {
             start=(start+1)%size;
-            currSize-=1;
         }
+        currSize-=1;
         return el;
     }
     int top(){
-        if(currSize==0) 
+        if(currSize==0){
             System.out.println("Queue is empty");
+            return -1;
+        }
         return q[start];
     }
     int size(){
