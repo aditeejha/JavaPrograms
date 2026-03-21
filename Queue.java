@@ -14,6 +14,16 @@ public class Queue{
         }
     }
     void pop(){
-        
+        if(currSize==0) 
+            System.out.println("Queue is empty");
+        int el=q[end];
+        if(currSize==1){
+            start=-1;
+            end=-1;
+        }
+        else {
+            start=(start+1)%size;
+            currSize-=1;
+        }
     }
 }
