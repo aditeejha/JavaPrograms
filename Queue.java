@@ -10,6 +10,7 @@ public class Queue{
         else{
             end=(end+1)%size;
             q[end]=x;
+            currSize+=1;
         }
-        }
+    }
 }
