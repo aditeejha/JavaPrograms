@@ -41,6 +41,18 @@ public class Queue{
     int size(){
         return currSize;
     }
+    void printQueue(){
+        if(currSize==0) {
+            System.out.println("Queue is empty");
+            return;
+        }
+        int i=start;
+        for (int j= 0; j<currSize; j++) {
+            System.out.print(q[i]+" ");
+            i=(i+1)%size;
+        }
+        System.out.println();
+    }
     public static void main(String[] args){
         Queue q=new Queue();
         q.push(1);
@@ -59,8 +71,5 @@ public class Queue{
         q.push(12);
         q.top();
         q.size();
-        for(int i=0; i<q.size; i++){
-            System.out.print(" "+q.q[i]);
-        }
     }
 }
