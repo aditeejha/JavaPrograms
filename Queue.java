@@ -69,7 +69,8 @@ public class Queue{
         q.push(10);
         q.push(11);
         q.push(12);
-        q.top();
-        q.size();
+        System.out.println("Front: "+q.top());
+        System.out.println("Size: "+q.size());
+        q.printQueue();
     }
 }
