@@ -53,5 +53,8 @@ public class Queue{
         q.push(12);
         q.top();
         q.size();
+        for(int i=0; i<q.size; i++){
+            System.out.print(" "+q.q[i]);
+        }
     }
 }
