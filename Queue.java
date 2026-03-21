@@ -11,9 +11,9 @@ public class Queue{
         }
         else{
             end=(end+1)%size;
+        }
             q[end]=x;
             currSize+=1;
-        }
     }
     int pop(){
         if(currSize==0){
