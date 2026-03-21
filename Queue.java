@@ -13,4 +13,7 @@ public class Queue{
             currSize+=1;
         }
     }
+    void pop(){
+        
+    }
 }
